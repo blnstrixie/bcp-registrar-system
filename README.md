@@ -282,19 +282,19 @@ Follow the steps below to run the BCP Registrar System locally using XAMPP.
 ## 🔐 Default Login Credentials
 You may log in using any of the following test accounts:
 
-1. Student
-   Username: belnastrixie
-   Password: Student1234
+**Role:** Student
+**Username:** belnastrixie
+**Password:** Student1234
 
-2. Registrar
-   Username: ehurangoanthony
-   Password: Registrar1234
+**Role:** Registrar
+**Username:** ehurangoanthony
+**Password:** Registrar1234
 
-3. Teacher
-   Username: dalisaycardo
-   Password: Teacher1234
+**Role:** Teacher
+**Username:** dalisaycardo
+**Password:** Teacher1234
 
-4. System Admin
-   Username: system_admin
-   Password: Admin1234
+**Role:** System Admin
+**Username:** system_admin
+**Password:** Admin1234
 
