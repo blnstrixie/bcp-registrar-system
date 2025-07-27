@@ -1,0 +1,120 @@
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 30px;
+  margin-bottom: 50px;
+}
+
+#cards-container-course-info {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 890px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #cards-container-course-info {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 890px) and (max-width: 999px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #cards-container-course-info {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #cards-container-course-info {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 670px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  #cards-container-course-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(0deg, rgb(153, 184, 246) 0%, rgb(84,144,240) 100%);
+  box-shadow: 0 0 5px 0.1px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.card i {
+  font-size: 50px;
+}
+
+.card-stats {
+  font-size: 15px;
+  line-height: 40px;
+}
+
+.number {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+#card-course:hover,
+#card-course-info:hover {
+  background: var(--primary-color);
+}
+
+#card-course:active,
+#card-course-info:active {
+  opacity: 0.5;
+}
+
+.course-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.course-stats i {
+  font-size: 17px;
+}
+
+.card-label {
+  font-size: 15px;
+}
+
+.course-label {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.label-yrlvl {
+  font-size: 15px;
+  font-weight: bold;
+}

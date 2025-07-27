@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6cbb66e0e0.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="{{ asset('icons/favicon.ico') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('icons/favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ asset('css/sheet.css') }}">
+
+    <title> Grade Report </title>
+</head>
+
+<body>
+    <main class="page">
+        <div class="top-row">
+            <img class="school-logo" src="{{ asset('images/bestlink-logo-2013.png') }}">
+
+            <div class="school-row">
+                <div class="school-name">
+                    Bestlink College of the Philippines &#45; Bulacan
+                </div>
+
+                <div class="school-address">
+                    San Jose Del Monte City, Bulacan
+                </div>
+            </div>
+        </div>
+
+        <h1> Grade Report Per Course </h1>
+
+        
+        <div class="content-subtitle class-margin-top">
+          <i class="fa-solid fa-graduation-cap"></i> Bachelor of Science in Information Systems
+        </div>
+
+        <table>
+              <thead>
+                <tr>
+                  <th scope="col">Student Number</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Course</th>
+                  <th scope="col">Year Level</th>
+                  <th scope="col">Section</th>
+                  <th scope="col">Final Grade</th>
+                </tr>
+              </thead>
+              <tbody>
+                @foreach ($enrollmentStatus as $overall) 
+                  @if($overall->course->program === 'Bachelor of Science in Information Systems')
+                    <tr>
+                        <td data-label="Student Number">{{ $overall->student_no }}</td>
+                        <td data-label="Name">{{ $overall->student->firstname }} {{ $overall->student->middlename }} {{ $overall->student->lastname }} {{ $overall->student->suffix }}</td>
+                        <td data-label="Course">{{ $overall->course->program }}</td>
+                        <td data-label="Year Level">{{ $overall->yearLevel->year_levels }}</td>
+                        <td data-label="Section">Bulacan{{ $overall->section->section_name }}</td>
+                        <td data-label="Final">{{ $overall->grades->final_grade }}</td>
+                    </tr>
+                  @endif
+                @endforeach
+              </tbody>                     
+            </table>
+
+            <div class="content-subtitle class-margin-top">
+              <i class="fa-solid fa-graduation-cap"></i> Bachelor of Science in Criminology
+            </div>
+
+          <table>
+              <thead>
+                <tr>
+                  <th scope="col">Student Number</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Course</th>
+                  <th scope="col">Year Level</th>
+                  <th scope="col">Section</th>
+                  <th scope="col">Final Grade</th>
+                </tr>
+              </thead>
+              <tbody>
+                @foreach ($enrollmentStatus as $overall) 
+                  @if($overall->course->program === 'Bachelor of Science in Criminology')
+                    <tr>
+                        <td data-label="Student Number">{{ $overall->student_no }}</td>
+                        <td data-label="Name">{{ $overall->student->firstname }} {{ $overall->student->middlename }} {{ $overall->student->lastname }} {{ $overall->student->suffix }}</td>
+                        <td data-label="Course">{{ $overall->course->program }}</td>
+                        <td data-label="Year Level">{{ $overall->yearLevel->year_levels }}</td>
+                        <td data-label="Section">Bulacan{{ $overall->section->section_name }}</td>
+                        <td data-label="Final">{{ $overall->grades->final_grade }}</td>
+                    </tr>
+                  @endif
+                @endforeach
+              </tbody>                     
+            </table>
+    </main>
+
+    <script src="{{ asset('js/print.js') }}"></script>
+</body>
+
+</html>

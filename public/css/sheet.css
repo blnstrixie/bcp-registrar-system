@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+  font-family: Poppins;
+  font-size: 14px;
+  background: #ebebeb;
+  padding: 20px;
+}
+
+.page {
+  width: 8.5in;
+  padding: 1in;
+  background: #ffffff;
+  margin: auto;
+  max-width: 100%;
+}
+
+.top-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.school-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.school-logo {
+  height: 80px;
+  width: 80px;
+}
+
+.school-name {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.student-info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.student-info-group {
+  border: 1px solid #000000;
+  border-bottom: none;
+  padding: 10px;
+}
+
+.student-info {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 40%;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.group,
+.total-group {
+  display: flex;
+  gap: 10px;
+}
+
+.total-group {
+  gap: 10px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #000000;
+  margin-bottom: 5px;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 10px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.gwa {
+  font-weight: bold;
+}
+
+.tor-tbl th {
+  border: 1px solid #000000;
+}
+
+.tor-tbl td {
+  border: none; 
+  border-right: 1px solid #000000; 
+}
+
+.tor-tbl td:first-child {
+  border-left: 1px solid #000000; 
+}
+
+.tor-tbl tr:not(:last-child) td {
+  border-bottom: none; 
+}
+
+.tor-tbl tr:last-child td {
+  border-bottom: 1px solid #000000; 
+}
+
+.bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total-label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.total-data {
+  font-size: 12px;
+}
+
+/*Upated Decmber 5*/
+.total-enrolled-count {
+  width: 40px; 
+  height: 40px;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center; 
+  line-height: 40px;
+  border-radius: 50%; 
+  border: 10px solid #ebebeb;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+.total-enrolled-tbl {
+  margin-bottom: 20px;
+}
+
+/* Added December 5*/
+.class-margin-top {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+@page {
+  size: A4;
+  margin: 1cm;
+}
+
+@media print {
+  html, body { 
+    font-size: 12px;
+  }
+
+  .page {
+    margin: 0;
+    padding: 0;
+  }
+}

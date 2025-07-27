@@ -1,0 +1,140 @@
+table {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0.1px rgba(0, 0, 0, 0.2);
+}
+
+table a {
+  text-decoration: none;
+}
+
+table td {
+  font-size: 14px;
+  padding: 20px 0;
+}
+
+table th,
+table td {
+  text-align: center;
+}
+
+table th {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px;
+  background: linear-gradient(0deg,  rgb(153, 184, 246) 0%, rgb(84,144,240) 100%);
+}
+
+table th:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+table th:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+.view-btn i,
+.edit-btn i {
+  font-size: 10px;
+}
+
+.view-btn,
+.edit-btn {
+  background-image: linear-gradient(315deg, #99B8F6 0%, #5490f0 74%);
+  color: #ffff;
+  font-weight: bold;
+  padding: 7px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.view-btn:hover,
+.edit-btn:hover {
+  background: var(--primary-color-dark);
+}
+
+.view-btn:active,
+.edit-btn:active {
+  opacity: 0.7;
+}
+
+.trash-btn i {
+  font-size: 10px;
+}
+
+.trash-btn {
+  font-weight: bold;
+  background-image: linear-gradient(315deg, #e97979 0%, #f40707 74%);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 15px;
+  cursor: pointer;
+}
+
+.trash-btn:hover {
+  background: #da0909;
+}
+
+.trash-btn:active {
+  opacity: 0.7;
+}
+
+tbody a {
+  color: inherit;
+  text-decoration: none;
+}
+
+tbody a:hover {
+  font-weight: bold;
+}

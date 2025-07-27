@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins';
+  background: #5490f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-size: 200% 200%; 
+  animation: gradientAnimation 15s linear infinite alternate;
+  position: relative;
+}
+
+#container {
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  background: rgba(84, 144, 240, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  position: relative;
+  background: inherit;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#container:after {
+  content: '';
+  background: inherit; 
+  position: absolute;
+  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.08);
+  filter: blur(50px);
+}
+
+#title {
+  font-family: 'Inter';
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 14px;
+  color: #fff;
+}
+
+.txt {
+  margin-bottom: 20px;
+}
+
+#codeInput {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.codeBox {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#verifyButton,
+#submitButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #272727;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#verifyButton {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+#verifyButton:hover,
+#submitButton:hover {
+  font-weight: bold;
+}
+
+#verifyButton:active,
+#submitButton:active {
+  opacity: 0.5;
+}
+
+#verifyButton.active {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#resend {
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Added December 5 */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type=email] {
+  width: 350px;
+  padding: 15px;
+  border-radius: 25px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+

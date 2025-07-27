@@ -1,0 +1,123 @@
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: 300;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  height: 80vh;
+  width: 70vh;
+  overflow-y: auto;
+}
+
+#deleteOverlay-content {
+  font-size: 14px;
+  height: 30% !important;
+  width: 30% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.close-btn:hover {
+  color: var(--primary-color-dark);
+}
+
+.close-btn:active {
+  opacity: 0.5;
+}
+
+.confirmation-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.confirmation-buttons button {
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  background-image: linear-gradient(315deg, #99B8F6 0%, #5490f0 74%);
+  transition: opacity 0.15s;
+}
+
+.delete-btn:hover {
+  background: var(--primary-color-dark);
+}
+
+.delete-btn:active {
+  opacity: 0.5;
+}
+
+.cancel-delete-btn {
+  color: var(--primary-color);
+  font-weight: bold;
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  transition: opacity 0.15s;
+}
+
+.cancel-delete-btn:hover {
+  background-image: linear-gradient(315deg, #99B8F6 0%, #5490f0 74%);
+  color: white;
+}
+
+.cancel-delete-btn:active {
+  opacity: 0.5;
+}
+
+.pair {
+  display: flex;
+  gap: 20px;
+}
+
+.pair textarea {
+  height: 55vh;
+  width: 300px;
+  padding: 10px;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: justify;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.pair-data {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.payment {
+  height: 280px;
+}
