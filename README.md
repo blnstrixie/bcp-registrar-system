@@ -3,6 +3,9 @@ A web-based system designed to assist the college registrar’s office in managi
   
 The system features role-based access for administrators, registrars, teachers, and students, each with dedicated tools and workflows. It streamlines administrative tasks, improves record accuracy, and allows students to process requests remotely.
 
+## About this Project
+This project was developed as part of our capstone requirement for the Bachelor of Science in Information Systems program at Bestlink College of the Philippines - San Jose Del Monte. It is intended for academic demonstration purposes only and is not yet optimized for production use.
+
 ## Features
 
 - **Unified Authentication** – Single login system for administrators, registrars, teachers, and students with role-specific dashboards.
@@ -24,6 +27,11 @@ The system features role-based access for administrators, registrars, teachers, 
 - **Database:** MariaDB (MySQL-compatible)
 - **Tools:** XAMPP, Composer, Visual Studio Code  
 - **Methodology:** Agile methodology (academic implementation)
+
+## My Contributions
+- Designed and implemented the front-end interface using HTML5, CSS3, and JavaScript.  
+- Designed the database schema using MySQL Workbench, integrated it with MariaDB, and wrote SQL queries for data management.  
+- Contributed to the preparation and writing of the capstone documentation.
 
 ## Screenshots
 
@@ -313,11 +321,3 @@ You may log in using any of the following dummy accounts to test the system's fe
 - **System Admin**
   - Username: `system_admin`
   - Password: `Admin1234`
-
-## About this Project
-This project was developed as part of our capstone requirement for the Bachelor of Science in Information Systems program at Bestlink College of the Philippines - San Jose Del Monte. It is intended for academic demonstration purposes only and is not yet optimized for production use.
-
-## My Contributions
-- Designed and implemented the front-end interface using HTML5, CSS3, and JavaScript.  
-- Designed the database schema using MySQL Workbench, integrated it with MariaDB, and wrote SQL queries for data management.  
-- Contributed to the preparation and writing of the capstone documentation.
